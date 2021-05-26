@@ -1,0 +1,142 @@
+/* .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:50px;
+  }
+
+
+  .box     {
+      text-align: center;
+      padding:15px;
+      min-height: 50vh;
+      min-width: 50vh;
+  }
+  
+  .box1 { order: 1; flex: 1; background:white; animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+  .image {
+    display: flex;
+    border-image: fill;
+    align-items: center;
+    transition: transform .7s ease-in-out;
+}
+
+.image:hover { 
+    transform: rotate(720deg);   
+} 
+.box1:hover {
+    background-color: teal;}
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+  
+.center {
+    display: flex;
+    align-items: center;
+    box-shadow
+}
+
+img:hover {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+.btn-fb:link, .btn-fb:hover, .btn-fb:visited, .btn-web:active {
+    color: rgb(40, 67, 218);
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-twt:link, .btn-twt:hover, .btn-twt:visited, .btn-twt:active {
+    color: rgb(27, 190, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-insta:link, .btn-insta:hover, .btn-insta:visited, .btn-insta:active {
+    color: #964BC3(183, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-web:link, .btn-web:hover, .btn-web:visited, .btn-web:active {
+    color: rgb(14, 189, 14);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn-fb {
+height: 72px;
+width: 72px;
+border-radius: 50%;
+text-align: center;
+}
+
+.btn-twt {
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.btn-insta {
+	width: 100px;
+	height: 50px;
+	transform: skew(20deg);
+}
+.btn-web {
+    height: 50px;
+    width: 100px;
+}
+
+.btn-fb:hover {
+    animation-name: fb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fb {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.btn-twt:hover {
+    animation-name: twt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twt {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}

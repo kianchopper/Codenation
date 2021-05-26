@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 70%;
+  }
+  header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+  
+    background: #2d6360 50% 0 url(huntington.jpg) no-repeat;
+  }
+  h1, h2 {
+    padding: 0 10%;
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+  }
+
+  h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    text-transform: uppercase;
+  }
+    h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    font-style: italic;
+}
+h1 {
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background: url(enso.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+    text-align: relative;
+}
+

@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Farro', sans-serif;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+    font-size: 25px;
+    text-align: center;
+    background-color:rgb(50, 50, 99);
+}
+
+.container {
+    width: 700px;
+    max-width: 80%;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    border-color: rgb(4, 1, 43);
+    box-shadow: 0 0 12px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: #2c2c58;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #161635;
+    box-shadow:black 0 0 10px 2px;
+}
