@@ -1,5 +1,5 @@
 // let pet = prompt("What is your pets name")
-
+//this is the pet project
 class Animal {
     constructor(petName) {
     this._petName = petName
