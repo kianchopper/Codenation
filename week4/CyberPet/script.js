@@ -2,10 +2,10 @@
 //this is the pet project
 class Animal {
     constructor(petName) {
-    this._petName = petName
+    this._petName = prompt("What is your pet name?")
     this._hunger = 100
     this._thirst = 100
-    this._hapiness = 0
+    this._happiness = 0
     this._health = 100
     }
 
@@ -18,8 +18,8 @@ class Animal {
     get thirst() {
         return this._thirst
     }
-    get hapiness() {
-        return this._hapiness
+    get happiness() {
+        return this._happiness
     }
     get health() {
         return this._health
@@ -31,7 +31,7 @@ class Animal {
         this._thirst += 10
     }
     play() {
-        this._hapiness += 15
+        this._happiness += 15
     }
     walks() {
         this._health += 15
@@ -43,13 +43,29 @@ class Dog extends Animal {
         super(petName)    
     }
 }
-const gizmo = new Dog("Gizmo")
+const dog = new Dog("");
 
-const eatAndDrink = () => {
-    gizmo.eat() 
-} 
-const walk = () => {
-    gizmo.walks
+class Cat extends Animal {
+    constructor(petName) {
+        super(petName)    
+    }
 }
-eatAndDrink()
-console.log(gizmo)
+let cat = new Cat("");
+
+const eatBTN = document.getElementById("eat");
+    eatBTN.addEventListener('click', () => {
+        let eating = pet.eat() 
+    })
+const drinkBTN = document.getElementById("drink");
+    drinkBTN.addEventListener('click', () => {
+        let drinking = pet.drink() 
+    })
+const playBTN = document.getElementById("play");
+    playBTN.addEventListener('click', () => {
+        let playing = pet.play() 
+    })
+const walksBTN = document.getElementById("walks");
+    walksBTN.addEventListener('click', () => {
+        let walking = pet.walks() 
+    })
+
