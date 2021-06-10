@@ -1,0 +1,99 @@
+body {
+  background: url(img/cat-jump.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  font-family: 'Do Hyeon', sans-serif;
+}
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+p {
+  font-family: 'Cormorant Garamond', serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+  color: rgb(107, 29, 151);
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row.center {
+  align-items: center;
+  font-size: 20px;
+}
+.col-1 {
+  flex: 1;
+  font-size: 20px;
+}
+.col-2 {
+  flex: 2;
+  font-size: 20px;
+}
+.block {
+  background: linear-gradient(to top, rgba(110, 88, 124, 0.863), rgba(224, 224, 224, 0.863));
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow:black 0 0 10px 2px, 0px 10px 5px;
+}
+.text-right {
+  text-align: right;
+}
+img.small {
+  max-height: 8rem;
+}
+button {
+  font-size: 1rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #ba54f5;
+  width: 110px;
+  height: 35px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button:hover{
+  background-color: rgb(155, 80, 201);
+  box-shadow:black 0 0 10px 2px;
+}
+
+button.add {
+  background-color: rgb(8, 97, 8);
+  width: 1.5rem;
+}
+button.remove {
+  background-color: #b30e0e;
+  width: 1.5rem;
+}
+button.badge {
+  background-color: #382c64bd;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
